@@ -1,0 +1,464 @@
+/* 全体設定 */
+
+body {
+  font-family:YuGothicPr6NM, "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+ 
+ul{
+  list-style: none;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* headeritem */
+
+.headeritem{
+  width: 1080px;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 75px;
+  display: flex;
+}
+
+.header-lists{
+  display: inline-block;
+}
+
+.header-lists ul{
+  display: flex;
+}
+
+.header-lists li{
+  margin-right: 30px;
+}
+
+.header-logo{
+  color: #1F91BE;
+  width: 104px;
+  font-size: 31px; 
+  font-weight: bold;
+  line-height: 75px;
+  margin-right: auto;
+}
+
+.header-list{
+  color: #333333;
+  font-size: 17px;
+  line-height: 75px;
+  font-weight: bold;
+}
+
+li:last-child{
+  margin-right: 0;
+}
+
+/* topimage */
+.topimage{
+  background-image: url(image/top.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 545px;
+  /* width: 1280px; */
+}
+
+/* container */
+.container{
+  display: flex;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 119px;
+  width: 1080px;
+}
+
+/* about */
+.about{
+  margin-bottom: 100px;
+  width: 700px;
+}
+
+.title{
+  color: #1F91BE;
+  border-bottom: 4px solid #1F91BE;
+  margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 30px;
+  padding-bottom: 9px;
+}
+
+.about-images{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-image img{
+  width: 320px;
+  margin-bottom: 30px;
+}
+
+.about-image p{
+  font-size: 16px;
+  line-height: 27px;
+  
+}
+
+.about-image{
+  width: 320px;
+}
+
+/* news */
+.news{
+  width: 700px;
+}
+
+.title-for-news{
+  margin-bottom: 10px;
+}
+
+.news-container{
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+
+.news-date{
+  font-size: 14px;
+  font-weight: bold;
+  width: 146px;
+  padding-top: 3px;
+}
+
+.news-text{
+  display: inline-block;
+  width: 80%;
+  font-size: 14px;
+  line-height: 1.7;
+  /* line-height: 1.71429; */
+}
+
+.archive{
+  font-size: 16px;
+  font-weight: bold;
+  color:#1F91BE;
+  border: 2px solid #1F91BE;
+  width: 148px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+/* aside */
+aside{
+  margin-left:80px;
+}
+
+.asideimage img{
+  margin-bottom: 30px;
+}
+
+/* category */
+
+.category{
+  width: 300px;
+  margin-top: 10px;
+}
+
+.title-for-category{
+  font-size: 24px;
+}
+
+.category-ul{
+  list-style: inside;
+}
+
+.category-ul li{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* footer */
+footer{
+  height: 50px;
+  background-color: #C7C7C7;
+  color: #fff;
+  font-size: 12px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+/*-------------------タブレット---------------------------*/
+
+@media only screen and (min-width:768px) and (max-width:1030px) {
+  .container{
+    flex-direction: column;
+    width: 91%;
+  }
+
+  aside{
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .category{
+    width: 700px;
+  }
+
+}
+
+/*-------------------スマートフォン---------------------------*/
+@media only screen and (max-width: 767px) {
+    .headeritem{
+      height: 82px;
+    }
+
+    .header-logo{
+      font-size: 18px; 
+      font-weight: bold;
+      position: absolute;
+      line-height: 18px;
+      top:20px;
+      left:15px;
+      
+    }
+    
+    .header-list{
+      color: #333333;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: bold;
+    }
+
+    .header-lists li{
+      margin-right: 12px;
+    }  
+
+    .header-lists{
+      position: absolute;
+      top: 48px;
+      left: 15px;
+    }
+
+  /* topimage */
+  .topimage{
+    background-image: url(image/top.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 160px;
+  }
+
+  /* container */
+  .container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 345px;
+  }
+
+
+  /* about */
+  .title{
+    color: #1F91BE;
+    border-bottom: 4px solid #1F91BE;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+  }
+
+  .about{
+    margin-bottom: 40px;
+    width: 345px;
+  }
+
+  .about-images{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-image{
+    margin-bottom: 40px;
+  }
+
+  .about-image img{
+    width: 345px;
+    margin-bottom: 20px;
+  }
+
+  .about-image{
+    width: 345px;
+  } 
+
+  /* news */
+  .news{
+    width: 345px;
+  }
+
+  aside{
+    margin: 0;
+    margin-top: 60px;
+    width: 345px;
+  }
+
+  .asideimage{
+    text-align: center;
+  }
+
+  .asideimage img{
+    margin-bottom: 20px;
+  }
+
+  /* archive */
+  .archive{
+    font-size: 14px;
+    font-weight: bold;
+    color:#1F91BE;
+    border: 2px solid #1F91BE;
+    width: 148px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  /* category */
+  .category{
+    width: 345px;
+    margin-top: 38px;
+  }
+}
+
+/*-------------------スマートフォン（320px対応）---------------------------*/
+@media only screen and (max-width: 345px) {
+  .headeritem{
+    height: 82px;
+  }
+
+  .header-logo{
+    font-size: 18px; 
+    font-weight: bold;
+    position: absolute;
+    line-height: 18px;
+    top:20px;
+    left:15px;
+    
+  }
+  
+  .header-list{
+    color: #333333;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+  }
+
+  .header-lists li{
+    margin-right: 12px;
+  }  
+
+  .header-lists{
+    position: absolute;
+    top: 48px;
+    left: 15px;
+  }
+
+/* topimage */
+.topimage{
+  background-image: url(image/top.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 160px;
+}
+
+/* container */
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 300px;
+}
+
+
+/* about */
+.title{
+  color: #1F91BE;
+  border-bottom: 4px solid #1F91BE;
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+}
+
+.about{
+  margin-bottom: 40px;
+  width: 300px;
+}
+
+.about-images{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-image{
+  margin-bottom: 40px;
+}
+
+.about-image img{
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.about-image{
+  width: 300px;
+} 
+
+/* news */
+.news{
+  width: 300px;
+}
+
+aside{
+  margin: 0;
+  margin-top: 60px;
+  width: 300px;
+}
+
+.asideimage{
+  text-align: center;
+}
+
+.asideimage img{
+  margin-bottom: 20px;
+}
+
+/* archive */
+.archive{
+  font-size: 14px;
+  font-weight: bold;
+  color:#1F91BE;
+  border: 2px solid #1F91BE;
+  width: 148px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* category */
+.category{
+  width: 300px;
+  margin-top: 38px;
+}
+}
+

@@ -822,7 +822,7 @@ footer p{
   display: flex;
   justify-content: center;
   /* padding-right: 125px; */
-  margin-bottom: 70px;
+  margin-bottom: 5.2vw;
 }
 
 .kodawari-point-content-title{
@@ -1284,6 +1284,7 @@ header{
 
 .online-items-item h4{
   font-size: 22px;
+
 }
 
 /* news-sp */

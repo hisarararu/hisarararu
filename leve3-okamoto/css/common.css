@@ -1,0 +1,426 @@
+
+/* 全体設定 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* { 
+  margin: 0px; 
+  padding: 0px; 
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+body{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  color: #333333; 
+}
+
+h2{
+  font-size: 36px;
+}
+
+h3{
+  font-size: 32px;
+}
+
+h4{
+  font-size: 22px;
+}
+
+.under{
+  background:linear-gradient(transparent 50%, #FFF200 0%);
+  padding-bottom: 10px;
+}
+
+.bridge{
+  background-image: url('../img/top-img/bridge.png');
+  background-size: contain;
+  width: 100%;
+  padding-top: 10.1%;
+  background-color: #FFFDF6;
+}
+
+/* .bridge2{
+  background-image: url('../img/top-img/bridge2.png');
+  height: 194px;
+  width: 100%;
+} */
+
+.bridge2-blank{
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.headlineunder{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 36px;
+}
+
+.headline-title{
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.inner{
+  width: 1080px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fz20{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn{
+  background: #295525;
+  color: #fff;
+  width: 221px;
+  height: 62px;
+  border-radius: 38px;
+  line-height: 62px;
+  font-size: 22px;
+}
+
+.btn:hover{
+  opacity: 0.6;
+  transition: all 0.3s ease 0s;
+}
+
+.btn a{
+  color: #fff;
+}
+
+.bcn{
+  text-align: left;
+  padding: 20px 0; 
+  font-weight: bold;
+}
+
+/* header-pc */
+
+header{
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.header-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+#header-item-logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100px;
+}
+
+.header-item:hover{
+  opacity: 0.6;
+  transition: all 0.3s ease 0s;
+}
+
+.header-list a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+#header-item-1 :after{
+  content: 'ABOUT';
+  display: block;
+  color: #295525;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+#header-item-2 :after{
+  content: 'NEWS';
+  display: block;
+  color: #295525;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+#header-item-3 :after{
+  content: 'STORE';
+  display: block;
+  color: #295525;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+#header-item-4 :after{
+  content: 'CONTACT';
+  display: block;
+  color: #295525;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+#header-item-2 {
+  width: 130px;
+}
+
+.header-item-logo{
+  width: 80px;
+  height: 90px;
+}
+
+.header-sp{
+  display: none;
+ }
+
+.border-yellow{
+  padding-bottom: 42px;
+  border-bottom: 9px #FFF200 solid;
+}
+
+/* footer-pc */
+.footer-bridge{
+  background-image: url('../img/top-img/footer-bg.png');
+  background-color: #FFFDF6;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 10%;
+}
+
+footer{
+  padding-top: 10px;
+}
+
+footer p{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-logo{
+  width: 120px;
+  height: 134px;
+  margin-bottom: 20px;
+}
+
+.footer-lists{
+  width: 620px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+.footer-lists ul{
+  padding-top: 20px;
+  display: flex;
+}
+
+.footer-lists ul li + li{
+  border-left: 1px solid#707070;
+}
+
+.footer-lists ul li{
+  flex-grow: 1;
+}
+
+.footer-lists a{
+  font-weight: bold;
+}
+
+.footer-lists li{
+  font-size: 18px;
+}
+
+.copyright{
+  background-color: #295525;  
+  color: #fff;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------------- */
+/* レスポンシブ（インナー〜タブレット） */
+
+@media screen and (max-width: 1350px) {
+
+  .inner{
+    width: 80vw;
+  }
+
+  .headlineunder{
+    margin-top: 36px;
+  }
+
+}
+
+/* ------------------------------------------------------------------------- */
+/* レスポンシブ（タブレット〜スマホ） */
+
+@media screen and (max-width: 767px) {
+
+/* 全体 */
+.bcn-nohome{
+  text-align: center;
+}
+
+.inner{
+  width: 340px;
+  max-width: 90%;
+}
+
+.bridge{
+  background-image: url('../img/top-img/bridge.png');
+  background-size: contain;
+  height: 38px;
+  width: 100%;
+  background-color: #FFFDF6;
+}
+
+.btn{
+  background: #295525;
+  color: #fff;
+  width: 220px;
+  height: 50px;
+  border-radius: 38px;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+.headline-title{
+  font-size: 24px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+}
+
+.headline-icon{
+  width: 80px;
+  height: 80px;
+}
+
+.headline-bg{
+  width: 200px;
+  height: 18px;
+}
+
+.headlineunder{
+  margin-top: 50px;
+}
+
+.headlineunder p{
+  line-height: 31px;
+}
+
+.br-sp{
+  display: inline;
+}
+
+/* header-sp */
+header{
+  height: 65px;
+  position: relative;
+}
+
+.header-nav{
+  display: none;
+}
+
+.header-sp{
+  display: block;
+ }
+ 
+.header-item-logo-sp{
+  width: 50px;
+  height: 56px;
+}
+
+.header-sp-logo{
+  position: absolute;
+  left: 15px;
+  top: 3px;
+}
+
+.drawer-hamburger{
+  position: absolute;
+  right: 8px !important;
+  top: 5px !important;
+}
+
+/* footer-sp */
+.footer-bridge{
+  background-image: url('../img/top-img/footer-bg.png');
+  background-size: cover;
+  background-color: #FFFDF6;
+  width: 100%;
+  height: 37px;
+}
+
+footer{
+  padding-top: 40px;
+}
+
+footer p{
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.footer-logo{
+  width: 90px;
+  height: 101px;
+  margin-bottom: 20px;
+}
+
+.footer-lists{
+  width: 154px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+.footer-lists ul{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-lists ul li + li{
+  border-left: none !important;
+}
+
+.footer-lists ul li{
+  flex-grow: 1;
+}
+
+.footer-lists a{
+  font-weight: bold;
+}
+
+.footer-lists li{
+  font-size: 14px;
+  padding-bottom: 11px;
+}
+
+.copyright{
+  background-color: #295525;  
+  color: #fff;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+}
+
+}

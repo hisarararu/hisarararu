@@ -1,0 +1,283 @@
+
+/* mv */
+#mv-pc-about {
+  background: url(../img/top-img/gallery1.jpg);
+  background-size:cover;
+  background-position: 100% 30%;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+#mv-sp-about {
+  background: url(../img/top-img/gallery1.jpg);
+  background-size:cover;
+  background-position: 100% 30%;
+  width: 100%;
+  height: 234px;
+  position: relative;
+  display: none;
+}
+
+.mv-txt-sp{
+  display: none;
+}
+
+/* aboutshima-pc */
+#aboutshima{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.headline-title{
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.br-sp{
+  display: none;
+}
+
+.aboutshima-content{
+  display: flex;
+  justify-content: space-around;
+  width: 950px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.aboutshima-content img{
+  width: 337px;
+  height: 482px;
+}
+
+.aboutshima-content-txt{
+  width: 480px;
+}
+
+.aboutshima-content-txt p{
+  text-align: left;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+/* company-pc */
+
+#company{
+  padding-top: 50px;
+  background-color: #FFFDF6;
+  padding-bottom: 35px;
+}
+
+.company-content{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.company-content p{
+  font-size: 22px;
+}
+
+.company-content-left{
+  width: 100px;
+}
+
+.company-content-right{
+  width: 200px;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+/* レスポンシブ（インナー〜タブレット） */
+
+@media screen and (max-width: 1350px) {
+
+  /* mv-tab */
+  #mv-pc-about {
+    background: url(../img/top-img/gallery1.jpg);
+    background-size:cover;
+    background-position: 100% 30%;
+    width: 100%;
+    height: 29.6vw;
+    position: relative;
+  }
+
+  .mv-pc-about-inner{
+    width: 80vw;
+    height: 29.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+/* aboutshima-tab */
+  
+#aboutshima{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.headline-title{
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.br-sp{
+  display: none;
+}
+
+.aboutshima-content{
+  display: flex;
+  justify-content: space-around;
+  width: 70.37vw;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.aboutshima-content img{
+  width: 25vw;
+  height: 35.7vw;
+}
+
+.aboutshima-content-txt{
+  width: 35.55vw;
+}
+
+.aboutshima-content-txt p{
+  text-align: left;
+  font-size: 1.9vw;
+  line-height: 2.6vw;
+}
+
+/* company-tab */
+
+#company{
+  padding-top: 50px;
+  background-color: #FFFDF6;
+  padding-bottom: 35px;
+}
+
+.company-content{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.company-content p{
+  font-size: 22px;
+  /* font-weight: bold; */
+}
+
+.company-content-left{
+  width: 100px;
+}
+
+.company-content-right{
+  width: 200px;
+}
+  
+} /* end-tab */
+
+/* ------------------------------------------------------------------------- */
+/* レスポンシブ（タブレット〜スマホ） */
+
+@media screen and (max-width: 767px) {
+  
+/* aboutshima-sp */
+
+#aboutshima{
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.aboutshima-content{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.aboutshima-content img{
+  width: 337px;
+  height: 482px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.aboutshima-content-txt{
+  width: 330px;
+  margin: 0 auto;
+}
+
+.aboutshima-content-txt p{
+  text-align: left;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* company-sp */
+
+#company{
+  padding-top: 50px;
+  background-color: #FFFDF6;
+  padding-bottom: 35px;
+}
+
+.company-content{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.company-content p{
+  font-size: 18px;
+}
+
+.company-content-left{
+  width: 100px;
+}
+
+.company-content-right{
+  width: 200px;
+}
+
+}/* end html */
+
+/* ------------------------------------------------------------------------- */
+/* レスポンシブ（〜375） */
+@media screen and (max-width: 375px) {
+
+  .aboutshima-content-txt{
+    width: 90vw;
+  }
+
+  .aboutshima-content img{
+    width: 90vw;
+    height: auto;
+  }
+
+  .company-content{
+    width: 80vw;
+  }
+
+  .footer-bridge{
+    height: auto;
+  }
+
+}

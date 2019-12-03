@@ -1,0 +1,307 @@
+/* contact-pc */
+
+.asterisk {
+	margin: 0 0 0 0.2em;
+	color: #f5637a;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="url"],
+.wpcf7 textarea {
+	background-color: #fff;
+	color: #333;
+  width: 500px;
+	border: 1px solid #ddd;
+	font-size: 100%;
+	padding: 0.5em;
+	border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.1) inset;
+  /* margin-top: 20px; */
+}
+
+.wpcf7-radio .wpcf7-list-item {
+  margin-top:10px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contact-margin{
+  margin-bottom: 30px;
+}
+
+.wpcf7{
+  text-align: left;
+}
+
+#wpcf7-f41-o1{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.wpcf7 input[type="submit"]{
+  background: #FFF200;
+  color: #fff;
+  width: 221px;
+  height: 62px;
+  border-radius: 38px;
+  line-height: 22px;
+  font-size: 22px;
+  color: #333;
+  border: 3px solid #333;
+}
+
+.wpcf7 input[type="submit"]:hover{
+  opacity: 0.6;
+  transition: all 0.3s ease 0s;
+}
+
+.contact-submit{
+  padding-top: 20px;
+  width: 221px;
+  margin: 0 auto;
+}
+
+.contact-div p{
+  margin-bottom: 35px;
+}
+
+.contact-div{
+  width: 500px;
+}
+
+/* mv */
+#mv-pc-contact {
+  background: url(../img/top-img/gallery3.jpg);
+  background-size:cover;
+  background-position: 100% 30%;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+#mv-sp-contact {
+  background: url(../img/top-img/gallery3.jpg);
+  background-size:cover;
+  background-position: 100% 30%;
+  width: 100%;
+  height: 234px;
+  position: relative;
+  display: none;
+}
+
+.mv-txt-sp{
+  display: none;
+}
+
+/* contact */
+#contact{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* footer-bridge 個別指定 */
+.footer-bridge{
+  background-color: #fff;
+}
+
+/* ------------------------------------------------------------------------- */
+/* レスポンシブ（インナー〜タブレット） */
+
+@media screen and (max-width: 1350px) {
+
+  /* mv-tab */
+  #mv-pc-contact {
+    background: url(../img/top-img/gallery3.jpg);
+    background-size:cover;
+    background-position: 100% 30%;
+    width: 100%;
+    height: 29.6vw;
+    position: relative;
+  }
+
+  .mv-pc-contact-inner{
+    width: 80vw;
+    height: 61.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+
+} /* end-tab */
+
+/* ------------------------------------------------------------------------- */
+/* レスポンシブ（タブレット〜スマホ） */
+
+@media screen and (max-width: 767px) {
+
+/* mv-sp */
+#mv-pc-contact{
+  display: none;
+}
+
+#mv-sp-contact{
+  display: block;
+}
+
+.mv-txt-sp{
+  display: block;
+  width: 172px;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+.mv-txt-sp p{
+  color: #295525;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 1px;
+  text-align: left; 
+  padding-bottom: 5px;
+}
+
+/* contact-sp */
+
+.asterisk {
+	margin: 0 0 0 0.2em;
+	color: #f5637a;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="url"],
+.wpcf7 textarea {
+	background-color: #fff;
+	color: #333;
+  width: 340px;
+	border: 1px solid #ddd;
+	font-size: 100%;
+	padding: 0.5em;
+	border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.1) inset;
+  /* margin-top: 20px; */
+}
+
+.wpcf7-radio .wpcf7-list-item {
+  margin-top:10px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contact-margin{
+  margin-bottom: 30px;
+}
+
+.wpcf7{
+  text-align: left;
+}
+
+#wpcf7-f41-o1{
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.wpcf7 input[type="submit"]{
+  background: #FFF200;
+  color: #fff;
+  width: 221px;
+  height: 62px;
+  border-radius: 38px;
+  line-height: 22px;
+  font-size: 22px;
+  color: #333;
+  border: 3px solid #333;
+}
+
+.wpcf7 input[type="submit"]:hover{
+  opacity: 0.6;
+  transition: all 0.3s ease 0s;
+}
+
+.contact-submit{
+  padding-top: 20px;
+  width: 221px;
+  margin: 0 auto;
+}
+
+.contact-div p{
+  margin-bottom: 35px;
+}
+
+.contact-div{
+  width: 340px;
+}
+
+}/* end html */
+
+/* ------------------------------------------------------------------------- */
+/* レスポンシブ（〜375） */
+
+@media screen and (max-width: 375px) {
+
+  .footer-bridge{
+    background-color: #fff;
+    height: auto;
+  }  
+
+  
+
+  .wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="url"],
+.wpcf7 textarea {
+	background-color: #fff;
+	color: #333;
+  width: 85vw;
+	border: 1px solid #ddd;
+	font-size: 100%;
+	padding: 0.5em;
+	border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.1) inset;
+}
+
+
+
+.contact-submit{
+  padding-top: 20px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.wpcf7 input[type="submit"]{
+  background: #FFF200;
+  color: #fff;
+  width: 58.9vw;
+  height: 16.5vw;
+  border-radius: 38px;
+  line-height: 22px;
+  font-size: 22px;
+  color: #333;
+  border: 3px solid #333;
+}
+
+.contact-submit{
+  padding-top: 20px;
+  width: 58.9vw !important;
+  margin: 0 auto !important;
+}
+
+.contact-div{
+  width: 90.6vw;
+}
+
+.wpcf7-response-output{
+  width: 85vw !important;
+}
+   
+}/* end html */
+
+
+
+

@@ -1,0 +1,165 @@
+/* menu */
+.setmenu{
+  background-image: url(img/sub01/setmenu.png);
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border: 1px solid #fff;
+  padding-bottom: 25px;
+}
+
+.setmenu-plus{
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.setmenu h2{
+  padding: 20px 0;
+  border-bottom: 1px dotted #fff;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#menu{
+  background-color: #28292a;
+  color:#fff;
+  padding-bottom: 160px;
+}
+
+#menu .inner{
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+.menu-top{
+  padding-top: 80px;
+  text-align: center;
+}
+
+.menu-content h2{
+  padding-bottom: 20px;
+}
+
+.menu-content-span-lower{
+  font-size: 18px;
+}
+
+.menu-content-lower h2{
+  font-size: 20px;
+}
+
+.menu-content-span{
+  font-size: 18px;
+}
+
+.otsumami{
+  padding-top: 5px;
+}
+
+.menu-content  p{
+  padding-bottom: 10px;
+}
+
+.menu-content-upper{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 90px;
+  
+}
+
+.menu-content-upper h2{
+  font-size: 25px;
+}
+
+.syoyu{
+  padding-top: 10px;
+}
+
+.menu-content-lower{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.menu-content-lower .menu-content{
+  width: 480px;
+}
+
+.menu-content-lower h2{
+  padding-bottom: 50px;
+}
+
+.menu-content-flex{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px dotted #fff;  
+  padding: 20px 0;
+}
+
+.menu-content{
+  text-align: center;
+}
+
+.menu-content-flex-last{
+  border-bottom: 1px dotted #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-content-img{
+    width: 250px;
+  }
+
+  .menu-content-lower .menu-content{
+    width: 45vw;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  #menu .inner{
+    max-width: 90%;
+    margin:0 auto;
+  }
+  
+  .menu-content-upper{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .menu-content-img{
+    width: 310px;
+  }
+
+  .syoyu{
+    padding-bottom: 60px;
+  }
+
+  .menu-content-lower{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  .menu-content-lower .menu-content{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .otsumami{
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .menu-content-img{
+    width: 220px;
+  }
+
+  .setmenu-item{
+    font-size: 12px;
+  }
+}

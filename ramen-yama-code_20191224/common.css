@@ -1,0 +1,436 @@
+/* 全体 */
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+body{
+  font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", sans-serif;
+  color: #000; 
+}
+
+h2{
+  font-weight: 300;
+}
+
+#nav-toggle{
+  line-height: 0;
+}
+
+#gloval-nav {
+	background: #000;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 990;
+	text-align: center;
+	display: flex;
+	visibility: hidden;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 29px;
+	opacity: 0;
+	transition: opacity .6s ease, visibility .6s ease;
+}
+
+.open #gloval-nav {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* hamburger */
+/*ナビメニューのスタイルを指定*/
+.Toggle{
+  display: none;
+}
+
+nav.NavMenu{
+  position: fixed; /*表示位置を固定*/
+  z-index: 12; /*重ね順を変更*/
+  top: 0; /*表示位置を指定*/
+  left: 0; /*表示位置を指定*/
+  background: #fff;/*背景を白にする*/
+  color: #000; /*文字色を黒にする*/
+  text-align: center; /*テキストを中央揃え*/
+  width: 100%; /*全幅表示*/
+  transform: translateY(-100%); /*ナビを上に隠す*/
+  transition: all 0.6s; /*アニメーションの時間を指定*/
+  }
+  
+  nav.NavMenu ul{
+  background: #000; /*背景をグレーにする*/
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
+  
+  nav.NavMenu ul li{
+  font-size: 24px;
+  list-style-type: none;
+  width: 100%;
+  padding-bottom: 0px;
+  }
+  
+  nav.NavMenu ul li:last-child{
+  padding-bottom: 0;
+  }
+  
+  nav.NavMenu ul li a{
+  display: block; /*クリックできる領域を広げる*/
+  color: #fff;
+  padding: 10px 0;
+  }
+  
+  /*トグルボタンが押されたときに付与するクラス*/
+  nav.NavMenu.active{
+  transform: translateY(0%);
+  }
+  
+    /*トグルボタンのスタイルを指定*/
+  .Toggle {
+  position: fixed;    /* bodyに対しての絶対位置指定 */
+  right: 30px;
+  top: 30px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 13;
+  background-color: #000;
+  /* border: 2px solid #000; */
+  }
+  
+  .Toggle span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  border-bottom: solid 3px #fff;
+  -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+  -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+  transition: .35s ease-in-out;			/*変化の速度を指定*/
+  left: 6px;
+  }
+  
+  .Toggle span:nth-child(1) {
+    top: 9px;
+  }
+  
+  .Toggle span:nth-child(2) {
+    top: 18px;
+  }
+  
+  .Toggle span:nth-child(3) {
+    top: 27px;
+  }
+  
+  /* 最初のspanをマイナス45度に */
+  .Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-bottom: solid 3px #fff;
+  }
+  
+  /* 2番目と3番目のspanを45度に */
+  .Toggle.active span:nth-child(2),
+  .Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: solid 3px #fff;
+  }
+
+/* header */
+.header-top{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 46%;
+}
+
+.header-lists{
+  width: 590px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-lists ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-lists ul li + li{
+  border-left: 1px solid#707070;
+}
+
+.header-lists ul li{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-list-border{
+  border-bottom: 2px solid red;
+  padding-bottom: 10px;
+  color: red;
+}
+
+
+/* header-sub */
+
+.header-sub{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+}
+
+
+.sub-header-logo{
+  width: 24.9vw;
+  min-width: 300px;
+  min-height: 120px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+/* mv-sub */
+.mv-sub{
+  background-size: cover;
+  width: 100%;
+  height: 22vw;
+  display: flex;
+  align-items: center;
+}
+
+.mv-sub-inner{
+  margin-left: 27%;
+}
+
+.mvsub01{
+  background-image: url('img/sub01/sub01-mv.jpg');
+}
+
+.mvsub02{
+  background-image: url('img/sub02/sub02-mv.jpg');
+}
+  
+.mv-sub h1{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+/* box04 */
+#box04{
+  display: flex;
+}
+
+.box04-content{
+  width: 50%;
+  height: 460px;
+  background-image: url(img/top/top-bg-address.jpg);
+  background-size: cover;
+  padding-top: 80px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.top-address{
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.top-address p{
+  padding-bottom: 20px;
+  font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", sans-serif;
+}
+
+.top-address-title{
+  font-size: 24px;
+  padding-top: 30px;
+}
+
+.map{
+  width: 50%;
+}
+
+.tel-number a{
+  color: #fff;
+  text-decoration:none;
+}
+
+/* footer */
+
+footer{
+  background-color: #000;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  color: #fff;
+  font-size: 24px;
+  font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", sans-serif;
+}
+
+@media screen and (max-width: 2000px) {
+  .mv-sub h1{
+    font-size: 3.5vw;
+  }
+  
+}
+
+@media screen and (max-width: 1150px) {
+  .header-top{
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .top-address{
+    font-size: 14px;
+  }
+  
+  .top-address p{
+    padding-bottom: 14px;
+  }
+  
+  .top-address-title{
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  
+}
+
+
+@media screen and (max-width: 768px) {
+
+  /* mv-sub */
+.mv-sub{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.mv-sub-inner{
+  margin-left: 0;
+  text-align: center;
+}
+
+.mvsub01{
+  background-image: url('img/sub01/sub01-mv.jpg');
+}
+
+.mvsub02{
+  background-image: url('img/sub02/sub02-mv.jpg');
+}
+  
+.mv-sub h1{
+  /* font-size: 60px; */
+  font-size: 30px;
+  font-weight: 600;
+}
+
+  /* header */
+  .header-lists{
+    display: none;
+  }
+
+  .Toggle{
+    display: block;
+  }
+
+  .mv-sub-inner{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 0px;
+  }
+
+  /* box04 */
+  #box04{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box04-content{
+    width: 100%;
+    height: 460px;
+    padding-top: 80px;
+    padding-left: 80px;
+  }
+  
+  .map{
+    width: 100%;
+    height: 460px;
+  }
+
+  .gattai{
+    width: 300px;
+    margin: 0 auto;
+  }
+
+}/* end media */
+
+@media screen and (max-width: 480px) {
+
+
+  .header-sub{
+    height: 70px;
+  }
+
+  .Toggle {
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 20px;
+    top: 14px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 13;
+    background-color: #000;
+    }
+    
+  .sub-header-logo{
+    width: 184px;
+    height:  auto;
+    min-width: auto;
+    min-height: auto;
+    /* max-width: 499px; */
+    /* position: static; */
+    /* top: 0px; */
+    /* left: 0px; */
+    z-index: 10;
+  }
+  
+  .box04-content{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .top-address img{
+    width: 220px;
+  }
+
+}/* end media */
+

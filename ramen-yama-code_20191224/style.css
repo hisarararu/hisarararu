@@ -231,8 +231,8 @@
   background-image: url(img/top/top-bg-address.jpg);
 }
 
-#fb-container{
-  padding-top: 30px;
+.top-fb-title{
+  padding-bottom: 20px;
 }
 
 /* facebook埋め込み */

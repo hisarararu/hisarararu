@@ -217,17 +217,29 @@
   font-size: 24px;
   font-weight: bold;
   color: #ffffff;
-  padding-top: 75px;
+  padding-top: 60px;
   padding-left: 90px;
+  padding-bottom: 40px;
 }
 
 .box03-img{
   width: 50%;
-  height: 100%;
+  object-fit: cover;
 }
 
 .top-address{
   background-image: url(img/top/top-bg-address.jpg);
+}
+
+#fb-container{
+  padding-top: 30px;
+}
+
+/* facebook埋め込み */
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe[style]{
+    width: 100% !important;
 }
 
 @media screen and (max-width: 1100px) {
@@ -246,7 +258,7 @@
     background-image: url(img/top/mv_01.png);
     background-position:center;
     background-size:cover;
-    width: 100vw;
+    width: 100%;
     height: 100vw;
     display: flex;
     align-items: center;
@@ -291,9 +303,6 @@
   .box01-content-point{
     font-size: 6vw;
   }      
-  
-  .box01-txt{
-  }
   
   .box01-2menu{
     width: 80%;
@@ -408,12 +417,22 @@
     font-size: 24px;
     font-weight: bold;
     color: #ffffff;
-    padding-top: 75px;
-    padding-left: 90px;
+    padding-top: 50px;
+    padding-left: 0px;
+    text-align: center;
   }
 
   .box03-img{
     width: 100%;
+  }
+
+  #pageplugin{
+    width: 100%;
+  }
+
+  #fb-container{
+    width: 50%;
+    margin: 0 auto;
   }
 
 }
@@ -459,8 +478,9 @@
   }
 
   .top-fb{
-    padding-left: 0px;
-    text-align: center;
+  }
+
+  #pageplugin{
   }
 
 }

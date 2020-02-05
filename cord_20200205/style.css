@@ -760,7 +760,7 @@ footer p{
         margin-top: 80px;
     }
     .flow-section{
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     /* video */
@@ -866,6 +866,7 @@ footer p{
     }
     .benefits-contents{
         padding-top: 150px;
+        padding-left: 10px;
     }
     .benefits-content{
         width: 100%;
@@ -940,7 +941,7 @@ footer p{
         }
 
         .inner-intern{
-            width: 75% !important;
+            width: 70% !important;
         }
 
 }

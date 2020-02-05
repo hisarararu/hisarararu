@@ -787,7 +787,7 @@ footer p{
         padding-top: 40px;
     }
     .intern-form h2{
-        font-size: 30px;
+        font-size: 26px;
         line-height: 1.6;
     }
     
@@ -940,7 +940,7 @@ footer p{
         }
 
         .inner-intern{
-            width: 80% !important;
+            width: 75% !important;
         }
 
 }

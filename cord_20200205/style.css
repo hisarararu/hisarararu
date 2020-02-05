@@ -705,7 +705,7 @@ footer p{
         margin-bottom: 30px;
     }
     .flow-1st-voices{
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 60px;
     }
     .flow-section p{
@@ -758,6 +758,9 @@ footer p{
     }
     .flow-3rd{
         margin-top: 80px;
+    }
+    .flow-section{
+        margin-top: 30px;
     }
 
     /* video */
@@ -910,6 +913,9 @@ footer p{
         display: block;
         margin-top: 30px;
     }
+    .flow-outer{
+        margin-top: 40px;
+    }
 
         /* video */
         .video h2{
@@ -921,6 +927,14 @@ footer p{
             font-size: 22px;
             top: 20px;
             left: -140px;
+        }
+
+        .iframe-wrap{
+            margin-top: 30px;
+        }
+
+        .inner-intern{
+            width: 85% !important;
         }
 
 }

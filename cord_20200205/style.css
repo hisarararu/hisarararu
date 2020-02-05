@@ -893,6 +893,9 @@ footer p{
     }
 
     /* flow */
+    .flow{
+        padding-top: 20px;
+    }
     .flow-1st-voice{
         border: 6px solid #1664B5;
     }
@@ -916,6 +919,9 @@ footer p{
     .flow-outer{
         margin-top: 40px;
     }
+    .flow-content{
+        padding-bottom: 50px;
+    }
 
         /* video */
         .video h2{
@@ -934,7 +940,7 @@ footer p{
         }
 
         .inner-intern{
-            width: 85% !important;
+            width: 80% !important;
         }
 
 }

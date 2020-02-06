@@ -75,17 +75,19 @@
     </div>
 
     <div class="message">
-        <div class="inner">
-            <h2>メッセージ</h2>
+        <div class="inner inner-message">
+            <h2 class="message-h2">メッセージ</h2>
             <p class="section-ttl-en">message</p>
             <div class="message-content">
                 <p>数年前まで就活生だった、就活生と社会人の両方の視点を持つ<br class="br-sp-no">入社1～3年目の社員があなたの就活を<span
                         class="message-content-txtl"><br class="br-sp">トータルサポート！</span>
                 </p>
                 <br>
-                <p><span class="message-content-txtl">プレミアムイベント</span><br class="br-sp">に参加できる切符を手にできるのは今！</p>
+                <p><span class="message-red-line-wrap"><span class="message-red-line">内定</span>に大きく近づく</span><br><span
+                        class="message-content-txtl">プレミアムイベント</span><br class="br-sp">に参加できる切符を手にできるのは今！</p>
                 <br>
-                <p>本気で自分の将来を考えたいあなた、<br><span class="message-content-txtxl">未来を考える一歩</span><br>を踏み出しましょう！</p>
+                <p class="message-content-bg-red">本気で自分の将来を考えたいあなた、<br><span
+                        class="message-content-txtxl">未来を考える一歩</span><br>を踏み出しましょう！</p>
             </div>
         </div>
     </div>
@@ -198,11 +200,9 @@
         </div>
     </div>
 
-
     <div class="video">
         <div class="inner">
             <h2>社長や幹部に会える<br>特別イベントへのご招待</h2>
-            <!-- <p>さらに！</p> -->
             <div class="video-yb">
                 <iframe width="" height=""
                     src="https://www.youtube.com/embed/5TUMDUQSQu0?start=0&loop=1&playlist=5TUMDUQSQu0" frameborder="0"
@@ -227,6 +227,28 @@
     <footer>
         <p>Copyright All Rights Reserved by Ritsubi Co., Ltd.</p>
     </footer>
+
+    <!-- [ スマホ用フッター] -->
+    <div class="footer_area">
+        <div class="footer_area_inner">
+            <a id="anchor" href=".intern-form">内定獲得に大きく近づく<br>インターンシップの申し込みはコチラ！</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#anchor').click(function () {
+                var speed = 400;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
 
 </body>
 

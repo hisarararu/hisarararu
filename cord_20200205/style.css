@@ -1,4 +1,9 @@
 /* all */
+
+.footer_area{
+    display: none;
+}
+
 body{
     font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
     font-size: 20px;
@@ -210,8 +215,42 @@ p.mv-middle-txtm{
 }
 
 .message-content{
-    padding-top: 80px;
+    padding-top: 70px;
     text-align: center;
+}
+
+.message-red-line{
+    color:#E83F33;
+    text-decoration: underline;
+}
+
+.inner-message{
+    width: 800px;
+}
+
+.message-red-line-wrap{
+    font-weight: bold;
+    font-size: 34px;
+}
+
+h2.message-h2{
+    background-color: #DBE3F3;
+    width: 100%;
+    width: 240px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.message-content-bg-red{
+    background-color: #E83F33;
+    color: #fff;
+    width: 100%;
+    /* padding: 40px 30px 40px !important; */
+    padding: 40px 0;
+    padding-bottom: 40px !important;
+    margin: 0 auto;
+    border-radius: 0px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .message-content-txtl{
@@ -541,6 +580,10 @@ footer p{
         width: 90%;
     }
 
+    .inner-message{
+        width: 80%;
+    }
+
     /* flow */
     /* .flow-img{
     }
@@ -579,8 +622,6 @@ footer p{
         font-size: 24px;
     }
 
-    .flow-1st-voice{
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -608,10 +649,6 @@ footer p{
     .mv p{
         font-size: 32px;
     }
-
-    /* .br-sp{
-        display: block;
-    } */
 
     .section-ttl-en-flow{
         margin-bottom: 30px;
@@ -644,6 +681,10 @@ footer p{
     .message-content p{
         font-size: 14px;
         padding-bottom: 20px;
+    }
+
+    .message-red-line-wrap{
+        font-size: 3vw;
     }
     
     /* benefits */
@@ -840,6 +881,9 @@ footer p{
     }
 
     /* message */
+    .inner-message{
+        width: 90%;
+    }
     .message-content-txtl{
         font-size: 34px;
     }
@@ -853,6 +897,15 @@ footer p{
         width: 25px;
         height: 25px;
     }
+    .message-content-txtxl{
+        font-size: 34px;
+    }
+    h2.message-h2{
+        width: 100%;
+    }
+.message-red-line-wrap{
+    font-size: 24px;
+}
 
     /* benefits */
     .benefits-00{
@@ -906,7 +959,6 @@ footer p{
     .flow-annai{
         font-size: 14px;
     }
-
     .flow-3rd{
         margin-top: 60px;
     }
@@ -942,6 +994,40 @@ footer p{
 
         .inner-intern{
             width: 65% !important;
+        }
+
+        /* 最下部表示 */
+        .footer_area{
+            display: block;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba( 0, 0, 0, 0.6 );
+            z-index: 100;
+            height: 80px;
+        }
+        .footer_area_inner{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+        #anchor{
+            background-color:#195A9B;
+            /* background-color:#E83F33; */
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            width: 100%;
+            margin-top: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.2;
+            opacity: 0.85;
         }
 
 }

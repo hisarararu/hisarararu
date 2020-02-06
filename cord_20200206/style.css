@@ -959,7 +959,6 @@ footer p{
     .flow-annai{
         font-size: 14px;
     }
-
     .flow-3rd{
         margin-top: 60px;
     }
@@ -1016,19 +1015,20 @@ footer p{
         }
         #anchor{
             background-color:#195A9B;
+            /* background-color:#E83F33; */
             text-decoration: none;
             color: #fff;
             display: inline-block;
             width: 100%;
             /* padding-top: 25px; */
             margin-top: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             text-align: center;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.2;
-            opacity: 0.9;
+            opacity: 0.85;
         }
 
 }

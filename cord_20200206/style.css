@@ -235,8 +235,8 @@ p.mv-middle-txtm{
 
 h2.message-h2{
     background-color: #DBE3F3;
-    /* width: 100%; */
-    width: 240px;
+    width: 100%;
+    /* width: 240px; */
     margin: 0 auto;
     padding: 5px 0;
 }
@@ -1008,7 +1008,7 @@ footer p{
             height: 80px;
         }
         .footer_area_inner{
-            width: 90%;
+            width: 95%;
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -1024,10 +1024,20 @@ footer p{
             padding-top: 10px;
             padding-bottom: 10px;
             text-align: center;
-            font-weight: bold;
-            font-size: 16px;
+            /* font-weight: bold; */
+            font-weight: normal;
+            font-size: 18px;
             line-height: 1.2;
             opacity: 0.85;
+        }
+        .footer_area_red{
+            font-weight: bold;
+            color: #E83F33;
+        }
+
+        .footer_area_inter{
+            font-weight: bold;
+            text-decoration: underline;
         }
 
 }

@@ -588,9 +588,8 @@ footer p{
         font-size: 40px;
     }
     p.mv-middle-intern{
-        font-size: 58px;
+        font-size: 8.5vw !important;
     }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -830,7 +829,7 @@ footer p{
             font-size: 38px;
         }
         p.mv-middle-intern{
-            font-size: 60px;
+            /* font-size: 60px;/ */
         }
         .mv-img-sp{
             display: none !important;
